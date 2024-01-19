@@ -4,11 +4,14 @@ import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import PageNotFound from '../pages/PageNotFound';
 import Experience from '../pages/Experience';
-import ContactMe from '../pages/ContactMe';
+import ContactMe from '../pages/Contact';
+import Testimonials from '../pages/Testimonials';
 
 export const routeData: RouteData[] = [
   {
-    path: '/projects',
+    path: '/projects/*',
+    name: 'Projects',
+    display: true,
     children: [
       {
         path: '/*',
@@ -17,7 +20,9 @@ export const routeData: RouteData[] = [
     ],
   },
   {
-    path: '/experience',
+    path: '/experience/*',
+    name: 'Experience',
+    display: true,
     children: [
       {
         path: '/*',
@@ -26,7 +31,20 @@ export const routeData: RouteData[] = [
     ],
   },
   {
-    path: '/contact-me',
+    path: '/testimonials/*',
+    name: 'Testimonials',
+    display: true,
+    children: [
+      {
+        path: '/*',
+        element: <Testimonials />,
+      },
+    ],
+  },
+  {
+    path: '/contact/*',
+    name: 'Contact',
+    display: true,
     children: [
       {
         path: '/*',
@@ -36,6 +54,7 @@ export const routeData: RouteData[] = [
   },
   {
     path: '/*',
+    display: false,
     children: [
       {
         path: '/',

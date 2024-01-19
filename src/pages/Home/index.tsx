@@ -1,11 +1,24 @@
+import { useEffect } from 'react';
+import Navigation from '../../components/Shared/Navigation';
 import styles from './styles.module.scss';
+import Socials from '../../components/Shared/Socials';
 
 const Home = () => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   return (
     <div className={styles.container}>
-      <div className={styles.text}>hello, my name is </div>
+      <div className={styles.text}>hello, my name is</div>
       <div className={styles.cloudyText}>ANDREW BROWER</div>
       <div className={styles.text}>welcome to my portfolio</div>
+      <Navigation />
+      <Socials />
     </div>
   );
 };

@@ -2,14 +2,14 @@ import Header from '../../components/Shared/Header';
 import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
 
-const Testimonials = () => {
+const Contact = () => {
   useScrollLock();
 
   return (
     <div className={styles.container}>
-      <Header title='Testimonials' gradient />
+      <Header title='Contact Me' gradient />
     </div>
   );
 };
 
-export default Testimonials;
+export default Contact;

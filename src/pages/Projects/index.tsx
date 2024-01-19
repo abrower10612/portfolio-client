@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <Header title='Projects' />
+      <Header title='Projects' gradient />
     </div>
   );
 };
