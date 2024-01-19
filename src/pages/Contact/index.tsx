@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-      <Header title='Contact Me' gradient />
+      <Header title='Contact' gradient />
     </div>
   );
 };
