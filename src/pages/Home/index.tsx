@@ -1,10 +1,11 @@
-import Header from '../../components/Shared/Header';
 import styles from './styles.module.scss';
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <Header title='Home' />
+      <div className={styles.text}>hello, my name is </div>
+      <div className={styles.cloudyText}>ANDREW BROWER</div>
+      <div className={styles.text}>welcome to my portfolio</div>
     </div>
   );
 };

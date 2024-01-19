@@ -1,4 +1,4 @@
-import Header from '../Header';
+import Header from '../../components/Shared/Header';
 import styles from './styles.module.scss';
 
 const PageNotFound = () => {

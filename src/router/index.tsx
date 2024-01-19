@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { RouteData } from './types';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
-import PageNotFound from '../components/Shared/PageNotFound';
+import PageNotFound from '../pages/PageNotFound';
 import Experience from '../pages/Experience';
 import ContactMe from '../pages/ContactMe';
 
