@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}>hello, my name is</div>
+      <div className={styles.text}>Hello, my name is</div>
       <div className={styles.cloudyText}>ANDREW BROWER</div>
       <div className={styles.title}>Full Stack Software Engineer</div>
       <Navigation />

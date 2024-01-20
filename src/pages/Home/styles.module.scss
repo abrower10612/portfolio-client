@@ -16,16 +16,7 @@
   }
 }
 
-.text {
-  color: $text;
-  font-size: 1.5em;
-  text-align: center;
-
-  @media(min-width: 500px) {
-    font-size: 2.5rem;
-  }
-}
-
+.text,
 .title {
   color: $text;
   font-size: 1.2em;
