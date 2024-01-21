@@ -1,4 +1,4 @@
-import ContactForm from '../../components/Shared/ContactForm';
+import ContactForm from '../../components/Contact/ContactForm';
 import Header from '../../components/Shared/Header';
 import styles from './styles.module.scss';
 

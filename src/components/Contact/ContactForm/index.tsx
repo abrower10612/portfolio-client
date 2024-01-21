@@ -22,7 +22,7 @@ const templateFormData = {
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>(templateFormData);
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const submit = async (e: any) => {
     e.preventDefault();
@@ -40,6 +40,7 @@ const ContactForm = () => {
 
   const textFieldStyles = {
     input: { color: 'white', width: width / 1.5, maxWidth: '400px' },
+    textArea: { color: 'white', width: width / 1.5, maxWidth: '400px' },
 
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
@@ -125,6 +126,8 @@ const ContactForm = () => {
           variant='outlined'
           required
           sx={textFieldStyles}
+          multiline
+          rows={5}
         />
       </div>
 

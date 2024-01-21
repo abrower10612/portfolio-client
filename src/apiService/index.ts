@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FormData } from '../components/Shared/ContactForm';
+import { FormData } from '../components/Contact/ContactForm';
 
 export const baseUrl = process.env.REACT_APP_BASE_URL;
 
