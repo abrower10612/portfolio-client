@@ -5,16 +5,14 @@ import * as apiService from '../../../apiService';
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
 
 export type FormData = {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   phone: string;
   message: string;
 };
 
 const templateFormData = {
-  firstName: '',
-  lastName: '',
+  name: '',
   email: '',
   phone: '',
   message: '',
@@ -66,27 +64,11 @@ const ContactForm = () => {
     <form className={styles.container} onSubmit={submit}>
       <div className={styles.input}>
         <TextField
-          label='First Name'
+          label='Name'
           variant='outlined'
-          name='firstName'
-          value={formData.firstName}
-          onChange={(e) =>
-            setFormData({ ...formData, firstName: e.target.value })
-          }
-          required
-          sx={textFieldStyles}
-        />
-      </div>
-
-      <div className={styles.input}>
-        <TextField
-          label='Last Name'
-          variant='outlined'
-          name='lastName'
-          value={formData.lastName}
-          onChange={(e) =>
-            setFormData({ ...formData, lastName: e.target.value })
-          }
+          name='name'
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           required
           sx={textFieldStyles}
         />
@@ -132,7 +114,12 @@ const ContactForm = () => {
       </div>
 
       <div>
-        <Button variant='contained' type='submit' color='success'>
+        <Button
+          variant='contained'
+          type='submit'
+          color='success'
+          sx={{ width: '100%' }}
+        >
           Get in Touch
         </Button>
       </div>
