@@ -1,0 +1,23 @@
+@import '/src/styles/palette.module.scss';
+
+.container {
+  border-bottom: dashed 2px white;
+  padding-bottom: 30px;
+  max-width: 400px;
+  margin: 50px auto 0;
+  text-align: left;
+}
+
+.company {
+  font-size: 1.5rem;
+  color: $cta;
+}
+
+.role {
+  margin-top: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

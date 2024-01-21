@@ -1,5 +1,5 @@
-import ContactForm from '../../components/Contact/ContactForm';
-import Header from '../../components/Shared/Header';
+import ContactForm from '../../components/contact/ContactForm';
+import Header from '../../components/shared/Header';
 import styles from './styles.module.scss';
 
 const Contact = () => {

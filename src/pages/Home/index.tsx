@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import Navigation from '../../components/Shared/Navigation';
+import Navigation from '../../components/shared/Navigation';
 import styles from './styles.module.scss';
-import Socials from '../../components/Shared/Socials';
+import Socials from '../../components/shared/Socials';
 
 const Home = () => {
   useEffect(() => {
