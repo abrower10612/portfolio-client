@@ -1,0 +1,59 @@
+@import '/src/styles/palette.module.scss';
+
+.menuIconContainer {
+  @media(min-width: 600px) {
+    display: none;
+  }
+}
+
+.menuIcon {
+  top: 10px;
+  left: 10px;
+
+  @media(min-width: 600px) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.drawerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: $background;
+  color: $text;
+  height: calc(100vh);
+  position: sticky;
+  top: 0;
+  grid-column: 1;
+  width: 100vw;
+}
+
+.header {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closeIcon {
+  color: $text;
+}
+
+.link {
+  text-decoration: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1.25rem;
+  width: fit-content;
+
+  &:hover {
+    color: $cta-secondary;
+  }
+}
+
+.active {
+  color: $cta-secondary
+}

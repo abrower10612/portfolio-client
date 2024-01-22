@@ -8,7 +8,9 @@ type Props = {
 const Header = (props: Props) => {
   return (
     <div
-      className={`${styles.container} ${props.gradient && styles.cloudyText}`}
+      className={`${styles.container} ${styles.underlined} ${
+        props.gradient && styles.cloudyText
+      }`}
     >
       {props.title}
     </div>

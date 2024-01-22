@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import { routeData } from '../../../router/index';
 import { Button } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
 
 const Navigation = () => {
@@ -11,14 +11,9 @@ const Navigation = () => {
   const sx = {
     button: {
       size: width > 500 ? 'large' : 'small',
-      color: '#57cc99',
+      color: '#ffffff',
       hover: {
-        background:
-          'linear-gradient(270deg, #79addc, #ffc09f, #ffee93, #fcf5c7, #adf7b6, #79addc, #ffc09f)',
-        backgroundSize: '300% 200%',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        boxShadow: 'none',
+        color: '#57cc99',
       },
     },
   };
@@ -34,16 +29,17 @@ const Navigation = () => {
         .map((link, index) => {
           return (
             <div className={styles.navItem} key={index}>
-              <Button
-                sx={{
-                  color: sx.button.color,
-                  ':hover': sx.button.hover,
+              <NavLink
+                key={index}
+                to={link.path.replace('/*', '')}
+                className={(route) => {
+                  return route.isActive
+                    ? `${styles.link} ${styles.active}`
+                    : `${styles.link}`;
                 }}
-                size={sx.button.size as any}
-                onClick={() => handleNavigate(link.path)}
               >
-                {link.name}
-              </Button>
+                <span>{link.name}</span>
+              </NavLink>
             </div>
           );
         })}

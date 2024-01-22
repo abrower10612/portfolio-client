@@ -3,6 +3,7 @@ export type RouteData = {
   name?: string;
   id?: string;
   display: boolean;
+  showLayout: boolean;
   children: {
     path: string;
     element: JSX.Element;

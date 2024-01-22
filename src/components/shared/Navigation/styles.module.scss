@@ -1,3 +1,5 @@
+@import '/src/styles/palette.module.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -19,4 +21,23 @@
     margin: 0 10px;
   }
   
+}
+
+.link {
+  text-decoration: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1.25rem;
+  width: fit-content;
+
+  &:hover {
+    color: $cta-secondary;
+  }
+}
+
+.active {
+  color: $cta-secondary
 }

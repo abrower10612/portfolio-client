@@ -6,16 +6,22 @@ import PageNotFound from '../pages/PageNotFound';
 import Experience from '../pages/Experience';
 import ContactMe from '../pages/Contact';
 import Testimonials from '../pages/Testimonials';
+import Layout from '../components/shared/Layout';
 
 export const routeData: RouteData[] = [
   {
     path: '/projects/*',
     name: 'Projects',
     display: true,
+    showLayout: true,
     children: [
       {
         path: '/*',
-        element: <Projects />,
+        element: (
+          <Layout>
+            <Projects />
+          </Layout>
+        ),
       },
     ],
   },
@@ -23,10 +29,15 @@ export const routeData: RouteData[] = [
     path: '/experience/*',
     name: 'Experience',
     display: true,
+    showLayout: true,
     children: [
       {
         path: '/*',
-        element: <Experience />,
+        element: (
+          <Layout>
+            <Experience />
+          </Layout>
+        ),
       },
     ],
   },
@@ -34,10 +45,15 @@ export const routeData: RouteData[] = [
     path: '/testimonials/*',
     name: 'Testimonials',
     display: true,
+    showLayout: true,
     children: [
       {
         path: '/*',
-        element: <Testimonials />,
+        element: (
+          <Layout>
+            <Testimonials />
+          </Layout>
+        ),
       },
     ],
   },
@@ -45,16 +61,22 @@ export const routeData: RouteData[] = [
     path: '/contact/*',
     name: 'Contact',
     display: true,
+    showLayout: true,
     children: [
       {
         path: '/*',
-        element: <ContactMe />,
+        element: (
+          <Layout>
+            <ContactMe />
+          </Layout>
+        ),
       },
     ],
   },
   {
     path: '/*',
     display: false,
+    showLayout: true,
     children: [
       {
         path: '/',
@@ -62,7 +84,11 @@ export const routeData: RouteData[] = [
       },
       {
         path: '/*',
-        element: <PageNotFound />,
+        element: (
+          <Layout>
+            <PageNotFound />
+          </Layout>
+        ),
       },
     ],
   },

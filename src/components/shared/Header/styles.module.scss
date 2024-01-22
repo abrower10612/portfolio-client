@@ -1,18 +1,24 @@
+@import '/src/styles/palette.module.scss';
+
 .container {
   margin: 20px;
   font-size: 32px;
 }
 
+.underlined {
+  border-bottom: solid 1px $text;
+}
+
 .cloudyText {
   margin: 20px 0;
-  font-size: 1.75em;
+  font-size: 2em;
   background: linear-gradient(270deg, #79addc, #ffc09f, #ffee93, #fcf5c7, #adf7b6, #79addc, #ffc09f, #ffee93, #fcf5c7, #adf7b6, #79addc);
   background-size: 400% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorClouds 15s linear infinite;
 
-  @media(min-width: 500px) {
+  @media(min-width: 600px) {
     font-size: 2.75rem;
   }
 }

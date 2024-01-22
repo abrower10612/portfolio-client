@@ -5,7 +5,10 @@ import styles from './styles.module.scss';
 const Contact = () => {
   return (
     <div className={styles.container}>
-      <Header title='Contact' gradient />
+      <div className={styles.header}>
+        <Header title='Contact' gradient />
+      </div>
+
       <div className={styles.form}>
         <ContactForm />
       </div>

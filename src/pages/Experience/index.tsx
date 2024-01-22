@@ -6,7 +6,9 @@ import styles from './styles.module.scss';
 const Experience = () => {
   return (
     <div className={styles.container}>
-      <Header title='Experience' gradient />
+      <div className={styles.headerContainer}>
+        <Header title='Experience' gradient />
+      </div>
 
       {experienceEntries.map((entry, index) => {
         return <ExperienceEntry key={index} entry={entry} />;
