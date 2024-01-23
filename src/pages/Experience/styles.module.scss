@@ -5,6 +5,10 @@
 .header {
   @media(min-width: 600px) {
     margin: 0 10px;
-    
   }
+}
+
+.entries {
+  max-height: calc(100vh - 120px);
+  overflow: scroll;
 }

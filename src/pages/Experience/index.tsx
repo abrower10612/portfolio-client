@@ -6,10 +6,10 @@ import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
 
 const Experience = () => {
-  const { unlockScroll } = useScrollLock();
+  const { lockScroll } = useScrollLock();
 
   useEffect(() => {
-    unlockScroll();
+    lockScroll();
   }, []);
 
   return (
@@ -18,9 +18,11 @@ const Experience = () => {
         <Header title='Experience' gradient underlined />
       </div>
 
-      {experienceEntries.map((entry, index) => {
-        return <ExperienceEntry key={index} entry={entry} />;
-      })}
+      <div className={styles.entries}>
+        {experienceEntries.map((entry, index) => {
+          return <ExperienceEntry key={index} entry={entry} />;
+        })}
+      </div>
     </div>
   );
 };
