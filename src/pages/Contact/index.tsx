@@ -8,7 +8,7 @@ const Contact = () => {
   const scroll = useScrollLock();
 
   useEffect(() => {
-    scroll.lock();
+    scroll.unlock();
   }, []);
 
   return (

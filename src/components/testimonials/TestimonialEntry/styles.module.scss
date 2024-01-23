@@ -1,0 +1,27 @@
+@import '/src/styles/palette.module.scss';
+
+.container {
+  margin: 30px 10px;
+  border-bottom: solid 1px $text;
+  padding-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  color: $cta-secondary
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.body {
+  white-space: pre-wrap;
+  font-size: 18px;
+  max-width: 800px;
+}
+
+.expandButton {
+  margin-top: 30px;
+}
