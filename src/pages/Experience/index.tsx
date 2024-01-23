@@ -6,8 +6,8 @@ import styles from './styles.module.scss';
 const Experience = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.headerContainer}>
-        <Header title='Experience' gradient />
+      <div className={styles.header}>
+        <Header title='Experience' gradient underlined />
       </div>
 
       {experienceEntries.map((entry, index) => {

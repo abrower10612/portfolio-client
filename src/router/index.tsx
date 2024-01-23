@@ -14,6 +14,7 @@ export const routeData: RouteData[] = [
     name: 'Projects',
     display: true,
     showLayout: true,
+    order: 2,
     children: [
       {
         path: '/*',
@@ -30,6 +31,7 @@ export const routeData: RouteData[] = [
     name: 'Experience',
     display: true,
     showLayout: true,
+    order: 3,
     children: [
       {
         path: '/*',
@@ -46,6 +48,7 @@ export const routeData: RouteData[] = [
     name: 'Testimonials',
     display: true,
     showLayout: true,
+    order: 4,
     children: [
       {
         path: '/*',
@@ -62,6 +65,7 @@ export const routeData: RouteData[] = [
     name: 'Contact',
     display: true,
     showLayout: true,
+    order: 5,
     children: [
       {
         path: '/*',
@@ -77,6 +81,8 @@ export const routeData: RouteData[] = [
     path: '/*',
     display: false,
     showLayout: true,
+    name: 'Home',
+    order: 1,
     children: [
       {
         path: '/',

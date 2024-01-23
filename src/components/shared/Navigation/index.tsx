@@ -1,49 +1,29 @@
-import styles from './styles.module.scss';
-import { routeData } from '../../../router/index';
-import { Button } from '@mui/material';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
+import { routeData } from '../../../router';
+import DesktopNavigation from './Desktop';
+import MobileNavigation from './Mobile';
 
 const Navigation = () => {
   const { width } = useWindowDimensions();
-  const navigate = useNavigate();
+  const displayPivot = 600;
+  const location = useLocation();
+  const showHome = location.pathname !== '/';
 
-  const sx = {
-    button: {
-      size: width > 500 ? 'large' : 'small',
-      color: '#ffffff',
-      hover: {
-        color: '#57cc99',
-      },
-    },
-  };
+  const routes = routeData
+    .filter((route) => (showHome ? route : route.name !== 'Home'))
+    .sort((a, b) => a.order - b.order)
+    .map((link) => {
+      const isHome = link.path === '/*';
+      const path = link.path.replace(`${isHome ? '*' : '/*'}`, '');
 
-  const handleNavigate = (path: string) => {
-    navigate(path.replace('/*', ''));
-  };
+      return { ...link, path };
+    });
 
-  return (
-    <div className={styles.container}>
-      {routeData
-        .filter((route) => route.display)
-        .map((link, index) => {
-          return (
-            <div className={styles.navItem} key={index}>
-              <NavLink
-                key={index}
-                to={link.path.replace('/*', '')}
-                className={(route) => {
-                  return route.isActive
-                    ? `${styles.link} ${styles.active}`
-                    : `${styles.link}`;
-                }}
-              >
-                <span>{link.name}</span>
-              </NavLink>
-            </div>
-          );
-        })}
-    </div>
+  return width > displayPivot ? (
+    <DesktopNavigation showHome={showHome} routes={routes} />
+  ) : (
+    <MobileNavigation showHome={showHome} routes={routes} />
   );
 };
 

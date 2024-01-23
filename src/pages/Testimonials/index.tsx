@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Header title='Testimonials' gradient />
+        <Header title='Testimonials' gradient underlined />
       </div>
     </div>
   );

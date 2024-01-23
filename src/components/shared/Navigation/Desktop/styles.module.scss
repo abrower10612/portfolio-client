@@ -1,0 +1,43 @@
+@import '/src/styles/palette.module.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0;
+  
+  @media(min-width: 500px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
+.navItem {
+  margin: 7px 0;
+
+  @media(min-width: 500px) {
+    color: #ffffff;
+    display: block;
+    margin: 0 10px;
+  }
+  
+}
+
+.link {
+  text-decoration: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1.25rem;
+  width: fit-content;
+
+  &:hover {
+    color: $cta-secondary;
+  }
+}
+
+.active {
+  color: $cta-secondary
+}
