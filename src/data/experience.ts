@@ -33,10 +33,10 @@ const experienceEntries: ExperienceEntryType[] = [
       },
     ],
     actions: [
-      'Eliminated type errors by incorporating TypeScript into the application server.',
-      'Implemented MikroORM to optimize efficiency and accuracy in database queries.',
-      'Increased system security by including JSON Web Tokens in the application API. Further reduced data breaches through a comprehensive role-based access system.',
-      'Created user role-based front-end interfaces and logic to improve user experience.',
+      'Designed efficient and high-performance database schemas.',
+      'Led a team of five engineers in the creation of a Gift Card Processing and Management Platform including its corresponding mobile application, using TypeScript, React, Next, Node, Express, Java, and Firebase.',
+      'Orchestrated the ground-up creation of a comprehensive event management system utilizing Node, Express, Vue.js, and TypeScript.',
+      'Spearheaded the integration of DevOps practices to enhance the deployment workflow, improve scalability, and ensure continuous high availability.',
     ],
   },
   {
@@ -52,10 +52,8 @@ const experienceEntries: ExperienceEntryType[] = [
       },
     ],
     actions: [
-      'Eliminated type errors by incorporating TypeScript into the application server.',
-      'Implemented MikroORM to optimize efficiency and accuracy in database queries.',
-      'Increased system security by including JSON Web Tokens in the application API. Further reduced data breaches through a comprehensive role-based access system.',
-      'Created user role-based front-end interfaces and logic to improve user experience.',
+      'Implemented BambooHR solutions to address HR challenges in over 100 global companies, resulting in successful outcomes in hiring and performance management.',
+      'Consistently achieved beyond performance quotas, reaching an impressive 205% and gaining recognition as a top performer.',
     ],
   },
   {
@@ -79,10 +77,9 @@ const experienceEntries: ExperienceEntryType[] = [
       },
     ],
     actions: [
-      'Eliminated type errors by incorporating TypeScript into the application server.',
-      'Implemented MikroORM to optimize efficiency and accuracy in database queries.',
-      'Increased system security by including JSON Web Tokens in the application API. Further reduced data breaches through a comprehensive role-based access system.',
-      'Created user role-based front-end interfaces and logic to improve user experience.',
+      'Achieved $691k in ARR and acquired 189 new clients, surpassing a $588k ARR quota.',
+      "Held a senior position in ADP's top producing region, fulfilling a key role in the company's success.",
+      "Qualified for ADP President's Club in recognition of outstanding sales performance",
     ],
   },
 ];
