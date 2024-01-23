@@ -3,9 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import IconTiles from '../../components/home/IconTiles';
 import Socials from '../../components/shared/Socials';
 import styles from './styles.module.scss';
+import useScrollLock from '../../hooks/useScrollLock';
+import { useEffect } from 'react';
 
 const Home = () => {
   const navigate = useNavigate();
+  const { lockScroll } = useScrollLock();
+
+  useEffect(() => {
+    lockScroll();
+  }, []);
 
   const stepForward = () => {
     navigate('/projects');
