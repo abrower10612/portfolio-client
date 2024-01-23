@@ -13,7 +13,7 @@ const ProjectEntry = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div>{props.project.name}</div>
+        <div className={styles.name}>{props.project.name}</div>
 
         {/* WEBSITE */}
         {props.project.webURL && (

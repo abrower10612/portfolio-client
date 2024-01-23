@@ -7,13 +7,17 @@
 }
 
 .icon {
-  color: $cta;
+  color: $cta-secondary
 }
 
 .header {
   display: flex;
   align-items: center;
   font-size: 24px;
+}
+
+.name {
+  color: $cta;
 }
 
 .chip {
