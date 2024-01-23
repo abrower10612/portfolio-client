@@ -4,4 +4,5 @@ export type ExperienceEntryType = {
     title: string;
     dates: string;
   }[];
+  actions: string[];
 };

@@ -3,9 +3,8 @@
 .container {
   border-bottom: solid 1px white;
   padding-bottom: 30px;
-  max-width: 400px;
-  margin: 20px auto;
-  text-align: left;
+  max-width: 1000px;
+  margin: 20px 15px;
 }
 
 .company {
@@ -13,11 +12,25 @@
   color: $cta;
 }
 
-.role {
+.roles {
   margin-top: 20px;
+}
+
+.line {
+  height: 20px;
+  border-left: solid 2px $text;
+  margin: 10px 0 10px 2px;
 }
 
 .title {
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 15px;
 }

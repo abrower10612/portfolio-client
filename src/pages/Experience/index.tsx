@@ -6,10 +6,10 @@ import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
 
 const Experience = () => {
-  const { lockScroll } = useScrollLock();
+  const scroll = useScrollLock();
 
   useEffect(() => {
-    lockScroll();
+    scroll.unlock();
   }, []);
 
   return (

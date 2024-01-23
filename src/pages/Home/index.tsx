@@ -8,10 +8,10 @@ import { useEffect } from 'react';
 
 const Home = () => {
   const navigate = useNavigate();
-  const { lockScroll } = useScrollLock();
+  const scroll = useScrollLock();
 
   useEffect(() => {
-    lockScroll();
+    scroll.lock();
   }, []);
 
   const stepForward = () => {

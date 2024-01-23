@@ -4,10 +4,10 @@ import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
 
 const Testimonials = () => {
-  const { lockScroll } = useScrollLock();
+  const scroll = useScrollLock();
 
   useEffect(() => {
-    lockScroll();
+    scroll.lock();
   }, []);
 
   return (

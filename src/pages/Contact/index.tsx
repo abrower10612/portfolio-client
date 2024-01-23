@@ -5,10 +5,10 @@ import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
 
 const Contact = () => {
-  const { lockScroll } = useScrollLock();
+  const scroll = useScrollLock();
 
   useEffect(() => {
-    lockScroll();
+    scroll.lock();
   }, []);
 
   return (
