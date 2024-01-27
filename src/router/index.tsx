@@ -7,6 +7,8 @@ import Experience from '../pages/Experience';
 import ContactMe from '../pages/Contact';
 import Testimonials from '../pages/Testimonials';
 import Layout from '../components/shared/Layout';
+import Blog from '../pages/Blog';
+import Post from '../pages/Blog/Post';
 
 export const routeData: RouteData[] = [
   {
@@ -61,11 +63,36 @@ export const routeData: RouteData[] = [
     ],
   },
   {
+    path: '/blog/*',
+    name: 'Blog',
+    display: true,
+    showLayout: true,
+    order: 5,
+    children: [
+      {
+        path: '/*',
+        element: (
+          <Layout>
+            <Blog />
+          </Layout>
+        ),
+      },
+      {
+        path: '/:id',
+        element: (
+          <Layout>
+            <Post />
+          </Layout>
+        ),
+      },
+    ],
+  },
+  {
     path: '/contact/*',
     name: 'Contact',
     display: true,
     showLayout: true,
-    order: 5,
+    order: 6,
     children: [
       {
         path: '/*',
