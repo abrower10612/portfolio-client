@@ -1,7 +1,9 @@
 @import '/src/styles/palette.module.scss';
 
 .menuIconContainer {
-  @media(min-width: 600px) {
+  display: block;
+  
+  @media(min-width: 850px) {
     display: none;
   }
 }
@@ -10,7 +12,7 @@
   top: 10px;
   left: 10px;
 
-  @media(min-width: 600px) {
+  @media(min-width: 850px) {
     top: 20px;
     left: 20px;
   }

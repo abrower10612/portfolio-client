@@ -1,0 +1,39 @@
+@import '/src/styles//palette.module.scss';
+
+.container {
+  margin: 0 30px;
+
+  h1 {
+    color: $text;
+    font-size: 28px;
+  }
+
+  img {
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 20px 20px 0;
+    float: left;
+    
+    @media(min-width: 400px) {
+      width: 40%;
+    }
+  }
+}
+
+.backButton {
+  color: $text;
+  text-decoration: none;
+}
+
+.bodyContainer {
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  white-space: pre-wrap;
+  font-size: 20px;
+  margin: 40px 0;
+}

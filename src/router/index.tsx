@@ -8,7 +8,7 @@ import ContactMe from '../pages/Contact';
 import Testimonials from '../pages/Testimonials';
 import Layout from '../components/shared/Layout';
 import Blog from '../pages/Blog';
-import Post from '../pages/Blog/Post';
+import PostDetails from '../pages/Blog/PostDetails';
 
 export const routeData: RouteData[] = [
   {
@@ -78,10 +78,10 @@ export const routeData: RouteData[] = [
         ),
       },
       {
-        path: '/:id',
+        path: '/:date',
         element: (
           <Layout>
-            <Post />
+            <PostDetails />
           </Layout>
         ),
       },

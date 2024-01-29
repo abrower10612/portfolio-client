@@ -6,7 +6,7 @@ import MobileNavigation from './Mobile';
 
 const Navigation = () => {
   const { width } = useWindowDimensions();
-  const displayPivot = 600;
+  const displayPivot = 850;
   const location = useLocation();
   const showHome = location.pathname !== '/';
 

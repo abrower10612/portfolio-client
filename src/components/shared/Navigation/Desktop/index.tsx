@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { routeData } from '../../../../router';
-import styles from './styles.module.scss';
 import { RouteData } from '../../../../router/types';
+import styles from './styles.module.scss';
 
 type Props = {
   showHome?: boolean;

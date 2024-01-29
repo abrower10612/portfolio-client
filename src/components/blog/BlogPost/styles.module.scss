@@ -1,0 +1,52 @@
+@import '/src/styles/palette.module.scss';
+
+.container {
+  margin: 20px 15px;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  width: 350px;
+}
+
+.coverImage {
+  width: 90%;
+  display: block;
+  border-radius: 6px;
+  border: solid 1px $background;
+  box-shadow: 5px 5px 15px $background;
+  position: absolute;
+  bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  height: 500px;
+  background-color: $background-secondary;
+  border: solid 1px $background-secondary;
+  border-radius: 6px;
+  position: relative;;
+  
+  &:hover {
+    background-color: $background;
+    border: solid 1px $text;
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 22px;
+  color: $cta;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: $cta-secondary;
+  margin-top: 15px;
+  font-weight: lighter;
+  font-size: 16px;
+}
