@@ -71,6 +71,25 @@ const ProjectEntry = (props: Props) => {
       </div>
 
       <div className={styles.desc}>{props.project.description}</div>
+
+      {/* TECHNOLOGIES USED */}
+      <div className={styles.technologies}>
+        {props.project.technologies.map((tech, index) => {
+          return (
+            <div key={index}>
+              <Tooltip title={tech.name}>
+                <IconButton target='_blank' href={tech.url} size='small'>
+                  <img
+                    src={tech.icon}
+                    alt={`${tech.name} icon`}
+                    className={styles.tech}
+                  />
+                </IconButton>
+              </Tooltip>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

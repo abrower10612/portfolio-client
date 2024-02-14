@@ -5,4 +5,11 @@ export type Project = {
   demoURL?: string;
   webURL?: string;
   description: string;
+  technologies: Technology[];
+};
+
+export type Technology = {
+  name: string;
+  icon: string;
+  url: string;
 };
