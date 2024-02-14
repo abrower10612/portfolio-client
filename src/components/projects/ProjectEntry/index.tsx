@@ -77,15 +77,15 @@ const ProjectEntry = (props: Props) => {
         {props.project.technologies.map((tech, index) => {
           return (
             <div key={index}>
-              <Tooltip title={tech.name}>
-                <IconButton target='_blank' href={tech.url} size='small'>
+              <IconButton target='_blank' href={tech.url} size='small'>
+                <Tooltip title={tech.name}>
                   <img
                     src={tech.icon}
                     alt={`${tech.name} icon`}
                     className={styles.tech}
                   />
-                </IconButton>
-              </Tooltip>
+                </Tooltip>
+              </IconButton>
             </div>
           );
         })}
