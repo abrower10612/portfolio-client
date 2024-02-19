@@ -20,6 +20,16 @@ const IconTiles = () => {
       />
       <img
         className={styles.icon}
+        src='/assets/svg/dart.svg'
+        alt='react.js logo'
+      />
+      <img
+        className={styles.icon}
+        src='/assets/svg/flutter.svg'
+        alt='react.js logo'
+      />
+      <img
+        className={styles.icon}
         src='/assets/svg/node.svg'
         alt='react.js logo'
       />
@@ -31,6 +41,16 @@ const IconTiles = () => {
       <img
         className={styles.icon}
         src='/assets/svg/java.svg'
+        alt='react.js logo'
+      />
+      <img
+        className={styles.icon}
+        src='/assets/svg/python.svg'
+        alt='react.js logo'
+      />
+      <img
+        className={styles.icon}
+        src='/assets/svg/django.svg'
         alt='react.js logo'
       />
       <img
