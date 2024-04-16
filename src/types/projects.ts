@@ -13,3 +13,15 @@ export type Technology = {
   icon: string;
   url: string;
 };
+
+export type FilterSelected = {
+  label: string;
+  value: string;
+};
+
+export type ProjectFilter = {
+  label: string;
+  onFilter: Function;
+  value: string;
+  options: FilterSelected[];
+};

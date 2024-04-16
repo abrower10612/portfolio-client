@@ -69,6 +69,15 @@ const projects: Project[] = [
     ],
   },
   {
+    name: 'Dice Roller',
+    type: 'Personal',
+    codeURL: 'https://github.com/abrower10612/flutter-dice-roller',
+    demoURL: 'https://dice-roller-bvd3.onrender.com',
+    description:
+      'A simple dice rolling app in which a user selects a number of dice ranging from 1 to 6. After that, you ask? They roll away to their hearts desire.',
+    technologies: [technologies.dart, technologies.flutter],
+  },
+  {
     name: 'Task Tracker',
     type: 'Personal',
     codeURL: 'https://github.com/abrower10612/flutter-task-tracker',

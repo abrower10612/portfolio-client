@@ -2,10 +2,17 @@
 
 .container {
   font-size: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .underlined {
   border-bottom: solid 1px $text;
+}
+
+.filterSelect {
+  color: white;
+  width: 200px;
 }
 
 .cloudyText {
