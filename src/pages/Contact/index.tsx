@@ -1,11 +1,12 @@
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Button } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Header from '../../components/shared/Header';
 import Socials from '../../components/shared/Socials';
 import useScrollLock from '../../hooks/useScrollLock';
 import styles from './styles.module.scss';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const Contact = () => {
   const [copied, setCopied] = useState<boolean>(false);
@@ -41,7 +42,7 @@ const Contact = () => {
           <Button
             className={styles.emailAddress}
             onClick={handleCopyEmail}
-            endIcon={<ContentCopyIcon />}
+            endIcon={copied ? <LibraryAddCheckIcon /> : <ContentCopyIcon />}
             sx={{ color: '#57cc99' }}
           >
             abrower10612@gmail.com
